@@ -1,0 +1,76 @@
+local L = LibStub("AceLocale-3.0"):NewLocale("RPManagerItems", "enUS", true)
+
+--[[
+
+  This space is left
+  intentionally blank
+
+]]
+
+-- RPManagerItems.lua
+L["greet1"]                 = "|CFFFFCC33[RPManagerItems] activated:"
+L["greet2"]                 = "|CFFFFCC33- %s special items available."
+
+-- Items
+L["distance"]               = "Distance"
+L["rifle"]                  = "Rifle"
+
+L["manaflow"]               = "Manaflow"
+L["manaflowDesc"]           = "A smooth Mithril rod with a sapphire at the head."
+L["manaflowComment"]        = "It crackles with arcane energy."
+L["manaflowUsage"]          = "Click me."
+L["manaflowHelp1"]          = "All party members are gradually connected with rays. The goal is to dissolve crossing lines as quickly as possible by moving accordingly."
+L["manaflowHelp2"]          = "The game gets more hectic the more participants it has. It makes sense for at least 5 players."
+L["manaflowWin"]            = "You win!"
+L["manaflowLoose"]          = "You lost at level"
+L["manaflowTooFew"]         = "Too few participants!"
+L["manaflowPlayers"]        = "Abort due to change in the number of players."
+L["manaflowBtnNew"]         = "New game"
+L["manaflowBtnStop"]        = "Stop game"
+L["manaflowBtnCenter"]      = "Center"
+L["manaflowBtnHelp"]        = "Help"
+
+L["airgun"]                 = "Airgun"
+L["airgunDesc"]             = "A complete set including bullets and targets."
+L["airgunComment"]          = "Keep out of the reach of children!"
+L["airgunUsage"]            = "Load and pull the trigger."
+L["airgunStart"]            = "Start\\naiming"
+L["airgunCock"]             = "Cock"
+L["airgunAim"]              = "Aim\\ncarefully"
+L["airgunWarp"]             = "Pay attention\\nto warp"
+L["airgunBreath"]           = "Control\\nbreathing"
+L["airgunDistance"]         = "Consider\\ndistance"
+L["airgunStand"]            = "Steady\\nstand!"
+L["airgunBlend"]            = "blend\\nsurroundings out"
+L["airgunClose"]            = "Close\\nan eye"
+L["airgunLight"]            = "Consider\\nlighting"
+L["airgunEmoteB"]           = "hits bullseye."
+L["airgunEmote1"]           = "hits the first ring."
+L["airgunEmote2"]           = "hits the second ring."
+L["airgunEmote3"]           = "hits the third ring."
+L["airgunEmote4"]           = "hits the outermost ring."
+L["airgunEmoteF"]           = "misses."
+L["airgunEmoteEmpty"]       = "has fired the last shot."
+L["airgunHelp1"]            = "<html><body>"
+L["airgunHelp2"]            = "<h2> Quick Start </h2>"
+L["airgunHelp3"]            = "<p> You start by clicking on the 'Start aiming' button. Two new buttons appear, each with a possible action. For example: </p>"
+L["airgunHelp4"]            = "<p align = \"center\"> 'aim carefully' vs. 'Consider lighting' </p>"
+L["airgunHelp5"]            = "<p> You now have two seconds to make a choice and click the button. This game repeats three times in total, after which the shot is fired, the quality of which is determined based on the results of your selections. </p> <br/> "
+L["airgunHelp6"]            = "<h2> Shot quality </h2>"
+L["airgunHelp7"]            = "<p> A selection is worth 0-2 points. But you can only get the possible points if you choose the better alternative, so for example there is a choice with a value of 1 point against one with 2 points. You will either gain you 2 points if you choose the better one, or none if you choose the worse one, so you not only have to choose quickly, you also need to find out which action is the better one. </p> <br/> "
+L["airgunHelp8"]            = "<h2> Emotes </h2>"
+L["airgunHelp9"]            = "<p> The game is accompanied by some emotes that tell the people around you how well you hit. </p> <br/>"
+L["airgunHelp10"]           = "<h2> Rating </h2>"
+L["airgunHelp11"]           = "<p> As soon as the item is closed, it places a target in the character bag with the shots fired and the points earned for it: </p>"
+L["airgunHelp12"]           = "<p align = \"center\"> Bullseye: 10 points </p>"
+L["airgunHelp13"]           = "<p align = \"center\"> 1st ring: 5 points </p>"
+L["airgunHelp14"]           = "<p align = \"center\"> 2nd ring: 4 points </p>"
+L["airgunHelp15"]           = "<p align = \"center\"> 3rd ring: 3 points </p>"
+L["airgunHelp16"]           = "<p align = \"center\"> 4th ring: 2 points </p>"
+L["airgunHelp17"]           = "<p> Please do not confuse these points with the points from the shot quality. </p> <br/>"
+L["airgunHelp18"]           = "<h1> Developed by Pris @ Aldor-EU </h1>"
+L["airgunHelp19"]           = "<h1> Thanks to the testers Fenwing and Evirell (Aldor-EU). </h1>"
+L["airgunHelp20"]           = "</body> </html>"
+L["airgunTargetNameSng"]    = "Target (%s points with one shot)"
+L["airgunTargetNamePlu"]    = "Target (%s points with %s shots)"
+L["airgunTargetUsage"]      = "Click to view."

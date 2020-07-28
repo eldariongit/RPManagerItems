@@ -1,0 +1,10 @@
+## Interface: 80300
+## Title: RPManager Items
+## Title-deDE: RPManager Items
+## Author: eldarion (Pris-Aldor)
+## Version: 1.0
+## Notes: Items for the roleplay manager
+## Notes-deDE: Items für den Rollenspiel-Manager
+## RequiredDeps: RPManager
+
+RPManagerItems.xml
