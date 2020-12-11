@@ -472,7 +472,7 @@ function RPManagerItems:getCodeManaFlow()
           "end\n"..
           "\n"..
           "local function drawCircle()\n"..
-          "  local f = CreateFrame(\"Frame\",\"\"..time(),UIParent)\n"..
+          "  local f = CreateFrame(\"Frame\",\"\"..time(),UIParent, BackdropTemplateMixin and \"BackdropTemplate\")\n"..
           "  DUEL_CIRCLE = f\n"..
           "  \n"..
           "  f:SetClampedToScreen(true)\n"..
