@@ -1,4 +1,4 @@
-## Interface: 80300
+## Interface: 90002
 ## Title: RPManager Items
 ## Title-deDE: RPManager Items
 ## Author: eldarion (Pris-Aldor)
