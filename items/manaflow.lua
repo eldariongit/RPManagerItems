@@ -491,7 +491,7 @@ function RPManagerItems:getCodeManaFlow()
           "  f:SetBackdrop(bd)\n"..
           "  local t=f:CreateTexture(nil,\"BACKGROUND\")\n"..
           "  t:SetAllPoints()\n"..
-          "  t:SetTexture(.4,.4,.4,.5)\n"..
+          "  t:SetColorTexture(.4,.4,.4,.5)\n"..
           "  f:SetSize(500,500)\n"..
           "  f:SetPoint(\"CENTER\", UIParent, \"CENTER\",0,0)\n"..
           "  f:SetFrameLevel(50)\n"..
