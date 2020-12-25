@@ -19,4 +19,5 @@
   
   <Script file="manaflow.lua"/>
   <Script file="airgun.lua"/>
+  <Script file="apexis.lua"/>
 </Ui>
