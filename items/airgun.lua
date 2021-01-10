@@ -162,13 +162,19 @@ function RPManagerItems:getCodeAirgun()
           "cls:SetFrameLevel(120)\\\n" ..
           "drawTarget()\\\n" ..
           "\"\n" ..
-          "end\n" ..
+          "end\n"
+  code = code ..
           "local function export()\n" ..
-          "  local code = getCode()\n" ..
+          "  local custom = 'local holes = { '\n" ..
           "  for i=1,#targetFrm.hits do\n" ..
           "    local _,_,_,x,y=targetFrm.hits[i]:GetPoint(1)\n" ..
-          "    code=code..\"drawHole(\"..string.format(\"%.1f\",x)..\",\"..string.format(\"%.1f\",y)..\");\"\n" ..
+          "     custom = custom .. '{ ' .. string.format('%.1f',x) .. ', ' .. string.format(\"%.1f\",y) .. '},'\n" ..
           "  end\n" ..
+          "  custom = custom .. '}'\n" ..
+          "  local code = getCode()\n" ..
+          "  code = code..'for i = 1, #holes do'\n" ..
+          "  code = code..'  drawHole(holes[i][1], holes[i][2])'\n" ..
+          "  code = code..'end'\n" ..
           "  local name = ''\n" ..
           "  if numShots == 1 then\n" ..
           "    name = string.format('"..L["airgunTargetNameSng"].."', points)\n"..
@@ -186,6 +192,7 @@ function RPManagerItems:getCodeAirgun()
           "    usage = '"..L["airgunTargetUsage"].."',\n" ..
           "  }\n" ..
           "  local item, _ = RPMTemplate.setNewItem(RPManager.ITEM_TYPE_SCRIPT, data, RPMCharacterDB)\n" ..
+          "  item.customization = custom\n" ..
           "  item.script = code\n" ..
           "  RPMBag.updateBag()\n" ..
           "end\n" ..
